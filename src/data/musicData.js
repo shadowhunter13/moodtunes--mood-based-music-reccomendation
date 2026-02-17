@@ -1,354 +1,218 @@
 export const musicData = {
   happy: [
-    {
-      title: "Good 4 U",
-      artist: "Olivia Rodrigo",
-      genre: "Pop",
-      duration: "2:58",
-      description: "An upbeat anthem perfect for celebrating life's victories"
-    },
-    {
-      title: "Sunflower",
-      artist: "Post Malone & Swae Lee",
-      genre: "Hip-Hop",
-      duration: "2:38",
-      description: "Feel-good vibes with a catchy melody that lifts your spirits"
-    },
-    {
-      title: "Dancing Queen",
-      artist: "ABBA",
-      genre: "Disco",
-      duration: "3:52",
-      description: "Classic disco hit that never fails to make you smile"
-    },
-    {
-      title: "Happy",
-      artist: "Pharrell Williams",
-      genre: "Pop",
-      duration: "3:53",
-      description: "Pure joy in musical form - impossible not to dance to"
-    },
-    {
-      title: "Good as Hell",
-      artist: "Lizzo",
-      genre: "Pop/R&B",
-      duration: "2:39",
-      description: "Empowering anthem that celebrates self-love and confidence"
-    },
-    {
-      title: "Can't Stop the Feeling!",
-      artist: "Justin Timberlake",
-      genre: "Pop",
-      duration: "3:56",
-      description: "Infectious energy that makes you want to move and groove"
-    }
+    { title: "Good 4 U", artist: "Olivia Rodrigo", genre: "Pop", duration: "2:58", description: "An upbeat anthem perfect for celebrating life's victories" },
+    { title: "Sunflower", artist: "Post Malone & Swae Lee", genre: "Hip-Hop", duration: "2:38", description: "Feel-good vibes with a catchy melody that lifts your spirits" },
+    { title: "Dancing Queen", artist: "ABBA", genre: "Disco", duration: "3:52", description: "Classic disco hit that never fails to make you smile" },
+    { title: "Happy", artist: "Pharrell Williams", genre: "Pop", duration: "3:53", description: "Pure joy in musical form - impossible not to dance to" },
+    { title: "Good as Hell", artist: "Lizzo", genre: "Pop/R&B", duration: "2:39", description: "Empowering anthem that celebrates self-love and confidence" },
+    { title: "Can't Stop the Feeling!", artist: "Justin Timberlake", genre: "Pop", duration: "3:56", description: "Infectious energy that makes you want to move and groove" },
+    { title: "Walking on Sunshine", artist: "Katrina & The Waves", genre: "Pop", duration: "3:00", description: "Pure optimism in every note" },
+    { title: "Don't Worry, Be Happy", artist: "Bobby McFerrin", genre: "A Cappella", duration: "4:08", description: "Carefree attitude wrapped in a catchy tune" },
+    { title: "Shut Up and Dance", artist: "Walk the Moon", genre: "Indie Pop", duration: "2:50", description: "Energetic invitation to celebrate life" },
+    { title: "Here Comes the Sun", artist: "The Beatles", genre: "Rock", duration: "3:06", description: "Timeless happiness classic that never gets old" },
+    { title: "Walking in the Clouds", artist: "Bastille", genre: "Alternative", duration: "3:15", description: "Joyful indie energy" },
+    { title: "Good Thing", artist: "Fine Young Cannibals", genre: "Soul", duration: "3:32", description: "Uplifting soul vibes" },
+    { title: "Blow", artist: "Kesha", genre: "Pop", duration: "3:34", description: "Party anthem full of joy" },
+    { title: "Wake Me Up", artist: "Avicii", genre: "EDM", duration: "4:09", description: "Feel-good dance track" },
+    { title: "Walking on Air", artist: "Kerli", genre: "Pop", duration: "3:37", description: "Floating on happiness" },
+    { title: "Colors", artist: "Halsey", genre: "Electropop", duration: "3:42", description: "Vibrant and uplifting" },
+    { title: "Levitating", artist: "Dua Lipa", genre: "Pop", duration: "3:23", description: "Cosmic pop happiness" },
+    { title: "Blinding Lights", artist: "The Weeknd", genre: "Synth-pop", duration: "3:20", description: "Retro pop joy" },
+    { title: "Don't Start Now", artist: "Dua Lipa", genre: "Disco-pop", duration: "3:23", description: "Disco-inspired feel-good" },
+    { title: "Electricity", artist: "Silk City & Dua Lipa", genre: "House", duration: "3:20", description: "Electric dance happiness" },
+    { title: "Nights", artist: "Frank Ocean", genre: "Hip-Hop", duration: "4:38", description: "Feel-good hip-hop journey" },
+    { title: "Crazy In Love", artist: "Beyoncé ft. Jay-Z", genre: "Pop/R&B", duration: "3:56", description: "Love and joy explosion" },
+    { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", genre: "Funk", duration: "4:30", description: "Funk-filled celebration" },
+    { title: "24K Magic", artist: "Bruno Mars", genre: "Pop", duration: "3:44", description: "Sparkly pop happiness" },
+    { title: "Treasure", artist: "Bruno Mars", genre: "Pop", duration: "2:54", description: "Precious moments captured in song" }
   ],
   sad: [
-    {
-      title: "Someone Like You",
-      artist: "Adele",
-      genre: "Soul",
-      duration: "4:45",
-      description: "Heartfelt ballad for processing deep emotions"
-    },
-    {
-      title: "Mad World",
-      artist: "Gary Jules",
-      genre: "Alternative",
-      duration: "3:07",
-      description: "Haunting cover that captures feelings of isolation"
-    },
-    {
-      title: "Hurt",
-      artist: "Johnny Cash",
-      genre: "Country",
-      duration: "3:38",
-      description: "Deeply moving reflection on life and regret"
-    },
-    {
-      title: "Black",
-      artist: "Pearl Jam",
-      genre: "Grunge",
-      duration: "5:43",
-      description: "Raw emotion expressed through powerful vocals"
-    },
-    {
-      title: "Tears in Heaven",
-      artist: "Eric Clapton",
-      genre: "Rock",
-      duration: "4:32",
-      description: "Beautiful tribute that helps process grief and loss"
-    },
-    {
-      title: "The Sound of Silence",
-      artist: "Simon & Garfunkel",
-      genre: "Folk",
-      duration: "3:05",
-      description: "Contemplative classic for quiet moments of reflection"
-    }
+    { title: "Someone Like You", artist: "Adele", genre: "Soul", duration: "4:45", description: "Heartfelt ballad for processing deep emotions" },
+    { title: "Mad World", artist: "Gary Jules", genre: "Alternative", duration: "3:07", description: "Haunting cover that captures feelings of isolation" },
+    { title: "Hurt", artist: "Johnny Cash", genre: "Country", duration: "3:38", description: "Deeply moving reflection on life and regret" },
+    { title: "Black", artist: "Pearl Jam", genre: "Grunge", duration: "5:43", description: "Raw emotion expressed through powerful vocals" },
+    { title: "Tears in Heaven", artist: "Eric Clapton", genre: "Rock", duration: "4:32", description: "Beautiful tribute that helps process grief and loss" },
+    { title: "The Sound of Silence", artist: "Simon & Garfunkel", genre: "Folk", duration: "3:05", description: "Contemplative classic for quiet moments of reflection" },
+    { title: "Skinny Love", artist: "Bon Iver", genre: "Indie Folk", duration: "3:59", description: "Fragile and heartbreaking" },
+    { title: "Hallelujah", artist: "Leonard Cohen", genre: "Folk", duration: "4:36", description: "Spiritual sorrow and beauty" },
+    { title: "Everybody Hurts", artist: "R.E.M.", genre: "Alternative Rock", duration: "3:46", description: "Comfort in shared pain" },
+    { title: "Fast Car", artist: "Tracy Chapman", genre: "Folk", duration: "4:51", description: "Poignant story of lost dreams" },
+    { title: "Chasing Cars", artist: "Snow Patrol", genre: "Post-punk Revival", duration: "4:24", description: "Melancholic introspection" },
+    { title: "Creep", artist: "Radiohead", genre: "Alternative Rock", duration: "3:56", description: "Existential sadness" },
+    { title: "No Surprises", artist: "Radiohead", genre: "Alternative Rock", duration: "3:48", description: "Quiet resignation" },
+    { title: "Exit Music (For a Film)", artist: "Radiohead", genre: "Alternative Rock", duration: "6:23", description: "Cinematic despair" },
+    { title: "Fake Plastic Trees", artist: "Radiohead", genre: "Alternative Rock", duration: "4:50", description: "Emotional numbness" },
+    { title: "The Night We Met", artist: "Lord Huron", genre: "Indie Folk", duration: "3:28", description: "Wistful longing" },
+    { title: "Hurt", artist: "Nine Inch Nails", genre: "Industrial Rock", duration: "4:16", description: "Raw pain and vulnerability" },
+    { title: "Further Away", artist: "Nick Drake", genre: "Folk", duration: "4:04", description: "Gentle melancholy" },
+    { title: "Pink Moon", artist: "Nick Drake", genre: "Folk", duration: "2:25", description: "Intimate sadness" },
+    { title: "Nutshell", artist: "Alice in Chains", genre: "Grunge", duration: "4:17", description: "Acoustic melancholy" },
+    { title: "Black Hole Sun", artist: "Soundgarden", genre: "Grunge", duration: "5:32", description: "Mysterious sorrow" },
+    { title: "Wonderwall", artist: "Oasis", genre: "Alternative Rock", duration: "4:19", description: "Bittersweet contemplation" },
+    { title: "To Build A Home", artist: "The Cinematic Orchestra", genre: "Post-rock", duration: "4:31", description: "Orchestral sadness" },
+    { title: "Gorgeous", artist: "Taylor Swift", genre: "Pop", duration: "3:36", description: "Heartbroken admiration" },
+    { title: "All Too Well", artist: "Taylor Swift", genre: "Alternative", duration: "5:29", description: "Detailed emotional breakdown" }
   ],
   energetic: [
-    {
-      title: "Eye of the Tiger",
-      artist: "Survivor",
-      genre: "Rock",
-      duration: "4:04",
-      description: "Ultimate pump-up song for motivation and determination"
-    },
-    {
-      title: "Uptown Funk",
-      artist: "Mark Ronson ft. Bruno Mars",
-      genre: "Funk",
-      duration: "4:30",
-      description: "High-energy funk that gets your body moving"
-    },
-    {
-      title: "Thunder",
-      artist: "Imagine Dragons",
-      genre: "Pop Rock",
-      duration: "3:07",
-      description: "Explosive energy with driving beats and powerful vocals"
-    },
-    {
-      title: "Pump It",
-      artist: "The Black Eyed Peas",
-      genre: "Hip-Hop",
-      duration: "3:33",
-      description: "Infectious beat that demands you move to the rhythm"
-    },
-    {
-      title: "Don't Stop Me Now",
-      artist: "Queen",
-      genre: "Rock",
-      duration: "3:29",
-      description: "Pure exuberance and unstoppable energy"
-    },
-    {
-      title: "Levels",
-      artist: "Avicii",
-      genre: "EDM",
-      duration: "3:18",
-      description: "Electronic energy that lifts you to new heights"
-    }
+    { title: "Eye of the Tiger", artist: "Survivor", genre: "Rock", duration: "4:04", description: "Ultimate pump-up song for motivation and determination" },
+    { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", genre: "Funk", duration: "4:30", description: "High-energy funk that gets your body moving" },
+    { title: "Thunder", artist: "Imagine Dragons", genre: "Pop Rock", duration: "3:07", description: "Explosive energy with driving beats and powerful vocals" },
+    { title: "Pump It", artist: "The Black Eyed Peas", genre: "Hip-Hop", duration: "3:33", description: "Infectious beat that demands you move to the rhythm" },
+    { title: "Don't Stop Me Now", artist: "Queen", genre: "Rock", duration: "3:29", description: "Pure exuberance and unstoppable energy" },
+    { title: "Levels", artist: "Avicii", genre: "EDM", duration: "3:18", description: "Electronic energy that lifts you to new heights" },
+    { title: "We Will Rock You", artist: "Queen", genre: "Rock", duration: "2:02", description: "Anthemic call to action" },
+    { title: "Another One Bites the Dust", artist: "Queen", genre: "Rock", duration: "3:36", description: "Powerful bass-driven energy" },
+    { title: "Bohemian Rhapsody", artist: "Queen", genre: "Rock Opera", duration: "5:56", description: "Epic and energizing masterpiece" },
+    { title: "Seven Nation Army", artist: "The White Stripes", genre: "Rock", duration: "3:35", description: "Iconic riff and massive energy" },
+    { title: "Smells Like Teen Spirit", artist: "Nirvana", genre: "Grunge", duration: "5:01", description: "Explosive grunge anthem" },
+    { title: "Killing in the Name", artist: "Rage Against the Machine", genre: "Rap Metal", duration: "3:16", description: "Intense and powerful" },
+    { title: "Superstition", artist: "Stevie Wonder", genre: "Funk", duration: "4:27", description: "Funky and irresistible" },
+    { title: "Sex on Fire", artist: "Kings of Leon", genre: "Rock", duration: "3:15", description: "Passionate rock energy" },
+    { title: "Hysteria", artist: "Muse", genre: "Alternative Rock", duration: "3:44", description: "Frenetic and thrilling" },
+    { title: "My Hero", artist: "Foo Fighters", genre: "Rock", duration: "4:20", description: "Powerful rock anthem" },
+    { title: "The Middle", artist: "Jimmy Eat World", genre: "Pop Punk", duration: "3:35", description: "Feel-good punk energy" },
+    { title: "Go with the Flow", artist: "Queens of the Stone Age", genre: "Hard Rock", duration: "3:09", description: "Groovy heavy energy" },
+    { title: "Dani California", artist: "Red Hot Chili Peppers", genre: "Rock", duration: "4:42", description: "Dynamic funk-rock" },
+    { title: "Black Hole Sun", artist: "Soundgarden", genre: "Grunge", duration: "5:32", description: "Heavy grunge power" },
+    { title: "Everlong", artist: "Foo Fighters", genre: "Rock", duration: "4:10", description: "Epic rock journey" },
+    { title: "Jump", artist: "Van Halen", genre: "Rock", duration: "4:05", description: "Classic 80s rock energy" },
+    { title: "You Give Love a Bad Name", artist: "Bon Jovi", genre: "Glam Metal", duration: "3:43", description: "Power ballad energy" },
+    { title: "Enter Sandman", artist: "Metallica", genre: "Metal", duration: "7:25", description: "Heavy and hypnotic" },
+    { title: "For Whom the Bell Tolls", artist: "Metallica", genre: "Metal", duration: "5:10", description: "Epic metal journey" }
   ],
   calm: [
-    {
-      title: "Weightless",
-      artist: "Marconi Union",
-      genre: "Ambient",
-      duration: "8:10",
-      description: "Scientifically designed to reduce anxiety and promote calm"
-    },
-    {
-      title: "Claire de Lune",
-      artist: "Claude Debussy",
-      genre: "Classical",
-      duration: "5:20",
-      description: "Ethereal piano piece that soothes the soul"
-    },
-    {
-      title: "Mad About You",
-      artist: "Billie Eilish",
-      genre: "Alternative",
-      duration: "3:07",
-      description: "Gentle vocals with a dreamy, calming atmosphere"
-    },
-    {
-      title: "River",
-      artist: "Leon Bridges",
-      genre: "Soul",
-      duration: "4:16",
-      description: "Smooth, flowing melody like a peaceful river"
-    },
-    {
-      title: "Holocene",
-      artist: "Bon Iver",
-      genre: "Indie Folk",
-      duration: "3:36",
-      description: "Minimalist beauty that creates space for reflection"
-    },
-    {
-      title: "Aqueous Transmission",
-      artist: "Incubus",
-      genre: "Alternative Rock",
-      duration: "7:49",
-      description: "Atmospheric journey that washes over you like water"
-    }
+    { title: "Weightless", artist: "Marconi Union", genre: "Ambient", duration: "8:10", description: "Scientifically designed to reduce anxiety and promote calm" },
+    { title: "Claire de Lune", artist: "Claude Debussy", genre: "Classical", duration: "5:20", description: "Ethereal piano piece that soothes the soul" },
+    { title: "Mad About You", artist: "Billie Eilish", genre: "Alternative", duration: "3:07", description: "Gentle vocals with a dreamy, calming atmosphere" },
+    { title: "River", artist: "Leon Bridges", genre: "Soul", duration: "4:16", description: "Smooth, flowing melody like a peaceful river" },
+    { title: "Holocene", artist: "Bon Iver", genre: "Indie Folk", duration: "3:36", description: "Minimalist beauty that creates space for reflection" },
+    { title: "Aqueous Transmission", artist: "Incubus", genre: "Alternative Rock", duration: "7:49", description: "Atmospheric journey that washes over you like water" },
+    { title: "Moonlight Sonata", artist: "Ludwig van Beethoven", genre: "Classical", duration: "5:24", description: "Timeless classical calm" },
+    { title: "The Luckiest", artist: "Ben Folds", genre: "Chamber Pop", duration: "4:06", description: "Gentle piano meditation" },
+    { title: "Elegy", artist: "Teixeira", genre: "Classical Guitar", duration: "5:40", description: "Peaceful guitar composition" },
+    { title: "Miserere Mei, Deus", artist: "Gregorio Allegri", genre: "Classical", duration: "6:14", description: "Spiritual vocal piece" },
+    { title: "Clair de Lune (Alternative)", artist: "Yanni", genre: "New Age", duration: "5:15", description: "Modern instrumental calm" },
+    { title: "The Cellar Door", artist: "Ty Frankel", genre: "Ambient", duration: "4:52", description: "Introspective soundscape" },
+    { title: "Space Music", artist: "Giorgio Moroder", genre: "Electronic", duration: "5:32", description: "Cosmic relaxation" },
+    { title: "Mountains", artist: "Steve Roach", genre: "Ambient", duration: "8:45", description: "Expansive ambient journey" },
+    { title: "Ambient 1: Music for Airports", artist: "Brian Eno", genre: "Ambient", duration: "15:00", description: "Pioneering ambient masterpiece" },
+    { title: "Nuvole Bianche", artist: "Ludovico Einaudi", genre: "Neoclassical", duration: "5:57", description: "Minimalist piano peace" },
+    { title: "Higher Ground", artist: "Stevie Wonder", genre: "Soul", duration: "3:56", description: "Spiritual and uplifting" },
+    { title: "Soak Up the Sun", artist: "Sheryl Crow", genre: "Country Rock", duration: "3:59", description: "Peaceful acoustic vibes" },
+    { title: "Iris", artist: "Goo Goo Dolls", genre: "Alternative Rock", duration: "4:54", description: "Soft rock meditation" },
+    { title: "Harvest Moon", artist: "Neil Young", genre: "Folk Rock", duration: "3:34", description: "Gentle acoustic classic" },
+    { title: "Feather Theme", artist: "Ry Cooder", genre: "Instrumental", duration: "4:20", description: "Soft steel guitar" },
+    { title: "Morning Glory", artist: "Robert Graysmith", genre: "New Age", duration: "5:44", description: "Dawn meditation" },
+    { title: "River Flow", artist: "Unknown", genre: "Ambient", duration: "6:30", description: "Water sounds meditation" },
+    { title: "Serenity", artist: "Enya", genre: "New Age", duration: "4:15", description: "Irish mystical calm" },
+    { title: "Only Time", artist: "Enya", genre: "Pop", duration: "4:20", description: "Soothing pop meditation" }
   ],
   romantic: [
-    {
-      title: "Perfect",
-      artist: "Ed Sheeran",
-      genre: "Pop",
-      duration: "4:23",
-      description: "Modern love song perfect for intimate moments"
-    },
-    {
-      title: "At Last",
-      artist: "Etta James",
-      genre: "Blues/Soul",
-      duration: "3:01",
-      description: "Timeless classic expressing the joy of finding love"
-    },
-    {
-      title: "La Vie En Rose",
-      artist: "Édith Piaf",
-      genre: "Chanson",
-      duration: "3:28",
-      description: "French romance captured in beautiful melody"
-    },
-    {
-      title: "Thinking Out Loud",
-      artist: "Ed Sheeran",
-      genre: "Pop",
-      duration: "4:41",
-      description: "Acoustic ballad about everlasting love"
-    },
-    {
-      title: "Make You Feel My Love",
-      artist: "Adele",
-      genre: "Soul",
-      duration: "3:32",
-      description: "Powerful declaration of unconditional love"
-    },
-    {
-      title: "All of Me",
-      artist: "John Legend",
-      genre: "R&B",
-      duration: "4:29",
-      description: "Heartfelt piano ballad celebrating complete devotion"
-    }
+    { title: "Perfect", artist: "Ed Sheeran", genre: "Pop", duration: "4:23", description: "Modern love song perfect for intimate moments" },
+    { title: "At Last", artist: "Etta James", genre: "Blues/Soul", duration: "3:01", description: "Timeless classic expressing the joy of finding love" },
+    { title: "La Vie En Rose", artist: "Édith Piaf", genre: "Chanson", duration: "3:28", description: "French romance captured in beautiful melody" },
+    { title: "Thinking Out Loud", artist: "Ed Sheeran", genre: "Pop", duration: "4:41", description: "Acoustic ballad about everlasting love" },
+    { title: "Make You Feel My Love", artist: "Adele", genre: "Soul", duration: "3:32", description: "Powerful declaration of unconditional love" },
+    { title: "All of Me", artist: "John Legend", genre: "R&B", duration: "4:29", description: "Heartfelt piano ballad celebrating complete devotion" },
+    { title: "Your Body Is a Wonderland", artist: "John Mayer", genre: "Pop/Rock", duration: "3:48", description: "Sensual and romantic" },
+    { title: "Falling", artist: "Harry Styles", genre: "Pop", duration: "3:28", description: "Intimate and dreamy" },
+    { title: "Kiss Me", artist: "Sixpence None the Richer", genre: "Alternative", duration: "4:30", description: "Sweet romantic indie" },
+    { title: "From This Moment On", artist: "Shania Twain", genre: "Country Pop", duration: "4:54", description: "Ultimate wedding song" },
+    { title: "Your Song", artist: "Elton John", genre: "Pop/Rock", duration: "4:52", description: "Classic love declaration" },
+    { title: "Can't Help Falling in Love", artist: "Elvis Presley", genre: "Pop", duration: "3:05", description: "Timeless romantic ballad" },
+    { title: "Wonderful Tonight", artist: "Eric Clapton", genre: "Rock", duration: "4:28", description: "Gentle admiration song" },
+    { title: "The Day We Met", artist: "The Band Perry", genre: "Country", duration: "3:49", description: "Romantic memory" },
+    { title: "Untitled (How Does It Feel)", artist: "How Does It Feel", genre: "Alternative", duration: "5:43", description: "Emotional vulnerability" },
+    { title: "Skinny Love", artist: "Bon Iver", genre: "Indie Folk", duration: "3:59", description: "Fragile romance" },
+    { title: "Brown Eyes", artist: "Destiny's Child", genre: "R&B", duration: "3:29", description: "Sensual romance" },
+    { title: "Iris", artist: "Goo Goo Dolls", genre: "Alternative Rock", duration: "4:54", description: "Vulnerable love song" },
+    { title: "She Will Be Loved", artist: "Maroon 5", genre: "Pop Rock", duration: "4:24", description: "Modern love anthem" },
+    { title: "Love Me Like You Do", artist: "Ellie Goulding", genre: "Pop", duration: "3:23", description: "Passionate pop romance" },
+    { title: "Kiss", artist: "Prince", genre: "Funk/Rock", genre: "Funk/Rock", duration: "3:32", description: "Sensual and groovy" },
+    { title: "No Scrubs", artist: "TLC", genre: "R&B", duration: "4:34", description: "Confident love song" },
+    { title: "Body and Soul", artist: "Billie Holiday", genre: "Jazz", duration: "3:39", description: "Jazz romance classic" },
+    { title: "The Way You Look Tonight", artist: "Frank Sinatra", genre: "Jazz", duration: "3:21", description: "Golden age romance" },
+    { title: "Blueprint (Fall for You)", artist: "Fiona Apple", genre: "Alternative", duration: "4:44", description: "Raw romantic emotion" }
   ],
   focused: [
-    {
-      title: "Ludovico Einaudi - Nuvole Bianche",
-      artist: "Ludovico Einaudi",
-      genre: "Neoclassical",
-      duration: "5:57",
-      description: "Minimalist piano perfect for deep concentration"
-    },
-    {
-      title: "Gymnopédie No. 1",
-      artist: "Erik Satie",
-      genre: "Classical",
-      duration: "3:32",
-      description: "Gentle, repetitive melody that enhances focus"
-    },
-    {
-      title: "Porcelain",
-      artist: "Moby",
-      genre: "Electronic",
-      duration: "4:01",
-      description: "Ambient electronic that creates productive atmosphere"
-    },
-    {
-      title: "Metamorphosis Two",
-      artist: "Philip Glass",
-      genre: "Minimalist",
-      duration: "5:31",
-      description: "Repetitive patterns that support sustained attention"
-    },
-    {
-      title: "Avril 14th",
-      artist: "Aphex Twin",
-      genre: "IDM",
-      duration: "2:05",
-      description: "Delicate piano loop perfect for creative work"
-    },
-    {
-      title: "Music for Airports",
-      artist: "Brian Eno",
-      genre: "Ambient",
-      duration: "17:20",
-      description: "Pioneering ambient work designed to enhance environment"
-    }
+    { title: "Ludovico Einaudi - Nuvole Bianche", artist: "Ludovico Einaudi", genre: "Neoclassical", duration: "5:57", description: "Minimalist piano perfect for deep concentration" },
+    { title: "Gymnopédie No. 1", artist: "Erik Satie", genre: "Classical", duration: "3:32", description: "Gentle, repetitive melody that enhances focus" },
+    { title: "Porcelain", artist: "Moby", genre: "Electronic", duration: "4:01", description: "Ambient electronic that creates productive atmosphere" },
+    { title: "Metamorphosis Two", artist: "Philip Glass", genre: "Minimalist", duration: "5:31", description: "Repetitive patterns that support sustained attention" },
+    { title: "Avril 14th", artist: "Aphex Twin", genre: "IDM", duration: "2:05", description: "Delicate piano loop perfect for creative work" },
+    { title: "Music for Airports", artist: "Brian Eno", genre: "Ambient", duration: "17:20", description: "Pioneering ambient work designed to enhance environment" },
+    { title: "Weightless", artist: "Marconi Union", genre: "Ambient", duration: "8:10", description: "Designed to boost productivity" },
+    { title: "Concentration Music for Work", artist: "Lemongrass", genre: "New Age", duration: "5:30", description: "Focus-enhancing composition" },
+    { title: "Deep Focus", artist: "Various Artists", genre: "Electronic Mix", duration: "Various", description: "Curated focus playlist" },
+    { title: "Study Beats", artist: "Lofi Hip Hop", genre: "Lo-fi", duration: "Various", description: "Relaxing background for work" },
+    { title: "Flow", artist: "Chad Lawson", genre: "Minimalist", duration: "3:42", description: "Piano meditation for focus" },
+    { title: "Thinking Music", artist: "Various", genre: "Ambient", duration: "15:00", description: "Extended focus session" },
+    { title: "Clarity", artist: "Jim Brickman", genre: "New Age", duration: "4:30", description: "Clear mind music" },
+    { title: "Mindful Moments", artist: "Ólafur Arnalds", genre: "Neoclassical", duration: "3:08", description: "Modern concentration piece" },
+    { title: "Focus Stream", artist: "Tycho", genre: "Ambient", duration: "4:43", description: "Electronic focus flow" },
+    { title: "Meditation", artist: "Deva Premal", genre: "World", duration: "6:31", description: "Spiritual concentration" },
+    { title: "Piano Sonata in A", artist: "Walter Gieseking", genre: "Classical", duration: "4:15", description: "Classical focus music" },
+    { title: "Nocturne in E-flat major", artist: "Chopin", genre: "Classical", duration: "4:27", description: "Romantic classical piece" },
+    { title: "Prelude in C Major", artist: "Bach", genre: "Baroque", duration: "1:34", description: "Perfect short focus loop" },
+    { title: "Adagio for Strings", artist: "Samuel Barber", genre: "Classical", duration: "8:04", description: "Deep emotional focus" },
+    { title: "Spiegel im Spiegel", artist: "Arvo Pärt", genre: "Minimalist", duration: "4:42", description: "Hypnotic focus piece" },
+    { title: "The Four Seasons - Summer", artist: "Vivaldi", genre: "Baroque", duration: "12:23", description: "Classical energy focus" },
+    { title: "Clair de Lune", artist: "Claude Debussy", genre: "Classical", duration: "5:20", description: "Impressionist focus" },
+    { title: "Working Flow", artist: "Unknown", genre: "Electronic", duration: "5:00", description: "Modern work focus" },
+    { title: "Zen Garden", artist: "Dean Evenson", genre: "New Age", duration: "6:45", description: "Eastern focus meditation" }
   ],
   nostalgic: [
-    {
-      title: "Yesterday",
-      artist: "The Beatles",
-      genre: "Pop",
-      duration: "2:05",
-      description: "Wistful reflection on times gone by"
-    },
-    {
-      title: "The Way You Look Tonight",
-      artist: "Frank Sinatra",
-      genre: "Jazz",
-      duration: "3:21",
-      description: "Classic romance that evokes golden memories"
-    },
-    {
-      title: "Summer Breeze",
-      artist: "Seals and Crofts",
-      genre: "Soft Rock",
-      duration: "3:28",
-      description: "Gentle melody that brings back warm memories"
-    },
-    {
-      title: "Photograph",
-      artist: "Ed Sheeran",
-      genre: "Pop",
-      duration: "4:18",
-      description: "Modern ballad about preserving precious memories"
-    },
-    {
-      title: "Vincent (Starry Starry Night)",
-      artist: "Don McLean",
-      genre: "Folk",
-      duration: "3:58",
-      description: "Beautiful tribute that captures artistic longing"
-    },
-    {
-      title: "The Night We Met",
-      artist: "Lord Huron",
-      genre: "Indie Folk",
-      duration: "3:28",
-      description: "Haunting melody about wishing to return to better times"
-    }
+    { title: "Yesterday", artist: "The Beatles", genre: "Pop", duration: "2:05", description: "Wistful reflection on times gone by" },
+    { title: "The Way You Look Tonight", artist: "Frank Sinatra", genre: "Jazz", duration: "3:21", description: "Classic romance that evokes golden memories" },
+    { title: "Summer Breeze", artist: "Seals and Crofts", genre: "Soft Rock", duration: "3:28", description: "Gentle melody that brings back warm memories" },
+    { title: "Photograph", artist: "Ed Sheeran", genre: "Pop", duration: "4:18", description: "Modern ballad about preserving precious memories" },
+    { title: "Vincent (Starry Starry Night)", artist: "Don McLean", genre: "Folk", duration: "3:58", description: "Beautiful tribute that captures artistic longing" },
+    { title: "The Night We Met", artist: "Lord Huron", genre: "Indie Folk", duration: "3:28", description: "Haunting melody about wishing to return to better times" },
+    { title: "Wonderwall", artist: "Oasis", genre: "Alternative Rock", duration: "4:19", description: "90s nostalgia anthem" },
+    { title: "Creep", artist: "Radiohead", genre: "Alternative Rock", duration: "3:56", description: "90s classic with emotional depth" },
+    { title: "No Diggity", artist: "BG Knocks", genre: "Hip-Hop", duration: "3:54", description: "90s hip-hop memory" },
+    { title: "Strawberry Swings", artist: "Coldplay", genre: "Alternative Rock", duration: "4:24", description: "Early 2000s nostalgia" },
+    { title: "Mr. Brightside", artist: "The Killers", genre: "New Wave", duration: "3:44", description: "2000s indie classic" },
+    { title: "Take Me Back to Eden", artist: "The Midnight", genre: "Synth-pop", duration: "4:08", description: "Retro 80s vibes" },
+    { title: "Kids", artist: "MGMT", genre: "Psychedelic Rock", duration: "4:55", description: "Modern song with retro feeling" },
+    { title: "Electric Feel", artist: "MGMT", genre: "Synth-pop", duration: "4:41", description: "80s inspired nostalgia" },
+    { title: "September", artist: "Earth, Wind & Fire", genre: "Funk", duration: "3:54", description: "Timeless nostalgia hit" },
+    { title: "Lovely Day", artist: "Bill Withers", genre: "Soul", duration: "4:50", description: "70s soul classic memory" },
+    { title: "Superstition", artist: "Stevie Wonder", genre: "Funk", duration: "4:27", description: "70s funk nostalgia" },
+    { title: "Ain't Too Proud to Beg", artist: "The Temptations", genre: "Soul", duration: "2:58", description: "Classic soul memory" },
+    { title: "My Girl", artist: "The Temptations", genre: "Soul", duration: "2:44", description: "Timeless soul classic" },
+    { title: "Teenage Dream", artist: "Katy Perry", genre: "Pop", duration: "3:25", description: "Retro 50s pop feel" },
+    { title: "In Your Eyes", artist: "Peter Gabriel", genre: "Pop", genre: "Pop", duration: "4:51", description: "80s movie romance" },
+    { title: "Don't You (Forget About Me)", artist: "Simple Minds", genre: "New Wave", duration: "3:36", description: "80s classic memory" },
+    { title: "Total Eclipse of the Heart", artist: "Bonnie Tyler", genre: "Hard Rock Ballad", duration: "6:09", description: "80s dramatic ballad" },
+    { title: "Time After Time", artist: "Cyndi Lauper", genre: "Synth-pop", duration: "3:59", description: "80s iconic ballad" },
+    { title: "Like a Virgin", artist: "Madonna", genre: "Synth-pop", duration: "3:34", description: "80s pop nostalgia" }
   ],
   adventurous: [
-    {
-      title: "Born to Be Wild",
-      artist: "Steppenwolf",
-      genre: "Rock",
-      duration: "3:30",
-      description: "Classic anthem for freedom and adventure"
-    },
-    {
-      title: "Life is a Highway",
-      artist: "Tom Cochrane",
-      genre: "Rock",
-      duration: "4:26",
-      description: "Road trip anthem about embracing life's journey"
-    },
-    {
-      title: "Adventure of a Lifetime",
-      artist: "Coldplay",
-      genre: "Pop Rock",
-      duration: "4:24",
-      description: "Uplifting song about seizing every moment"
-    },
-    {
-      title: "Roam",
-      artist: "The B-52's",
-      genre: "New Wave",
-      duration: "4:53",
-      description: "Fun, energetic song about exploring the world"
-    },
-    {
-      title: "On Top of the World",
-      artist: "Imagine Dragons",
-      genre: "Pop Rock",
-      duration: "3:12",
-      description: "Triumphant anthem about reaching new heights"
-    },
-    {
-      title: "Wanderlust",
-      artist: "The Weeknd",
-      genre: "R&B",
-      duration: "5:07",
-      description: "Smooth track about the desire to explore and discover"
-    }
+    { title: "Born to Be Wild", artist: "Steppenwolf", genre: "Rock", duration: "3:30", description: "Classic anthem for freedom and adventure" },
+    { title: "Life is a Highway", artist: "Tom Cochrane", genre: "Rock", duration: "4:26", description: "Road trip anthem about embracing life's journey" },
+    { title: "Adventure of a Lifetime", artist: "Coldplay", genre: "Pop Rock", duration: "4:24", description: "Uplifting song about seizing every moment" },
+    { title: "Roam", artist: "The B-52's", genre: "New Wave", duration: "4:53", description: "Fun, energetic song about exploring the world" },
+    { title: "On Top of the World", artist: "Imagine Dragons", genre: "Pop Rock", duration: "3:12", description: "Triumphant anthem about reaching new heights" },
+    { title: "Wanderlust", artist: "The Weeknd", genre: "R&B", duration: "5:07", description: "Smooth track about the desire to explore and discover" },
+    { title: "Take Me Home, Country Roads", artist: "John Denver", genre: "Country", duration: "3:10", description: "Adventure across mountain and streams" },
+    { title: "Go Your Own Way", artist: "Fleetwood Mac", genre: "Rock", duration: "3:38", description: "Independent adventure spirit" },
+    { title: "Highway to Hell", artist: "AC/DC", genre: "Hard Rock", duration: "3:28", description: "Rebellious rock adventure" },
+    { title: "Free Fallin'", artist: "Tom Petty", genre: "Rock", duration: "3:42", description: "Carefree falling adventure" },
+    { title: "Living for the City", artist: "Stevie Wonder", genre: "Funk", duration: "4:13", description: "Urban adventure journey" },
+    { title: "Mr. Jones", artist: "Counting Crows", genre: "Alternative Rock", duration: "5:49", description: "Desperate adventure and hope" },
+    { title: "Dreams", artist: "Fleetwood Mac", genre: "Rock", genre: "Rock", duration: "4:16", description: "Chasing adventurous dreams" },
+    { title: "Here We Go Again", artist: "Imagine Dragons", genre: "Pop Rock", duration: "3:30", description: "Fresh start adventure" },
+    { title: "Warriors", artist: "Imagine Dragons", genre: "Pop Rock", duration: "2:47", description: "Battle-ready adventure" },
+    { title: "Pumped Up Kicks", artist: "Foster the People", genre: "Indie Pop", duration: "3:59", description: "Rebellious adventure energy" },
+    { title: "Feel the Thunder", artist: "Kimbra", genre: "Indie Pop", duration: "2:51", description: "Electric adventure rush" },
+    { title: "Sail", artist: "AWOLNATION", genre: "Electronic", duration: "3:55", description: "Epic electronic adventure" },
+    { title: "Take On Me", artist: "a-ha", genre: "Synth-pop", duration: "3:45", description: "80s adventure fantasy" },
+    { title: "Walk This Way", artist: "Run-DMC", genre: "Hip-Hop Rock", duration: "3:46", description: "Confident walk adventure" },
+    { title: "Jump Around", artist: "House of Pain", genre: "Hip-Hop", duration: "3:37", description: "High-energy adventure party" },
+    { title: "Regulate", artist: "Warren G & Nate Dogg", genre: "Hip-Hop", duration: "4:22", description: "Smooth hip-hop adventure" },
+    { title: "Mo Money Mo Problems", artist: "The Notorious B.I.G.", genre: "Hip-Hop", duration: "3:56", description: "Ambitious adventure quest" },
+    { title: "Going the Distance", artist: "Cake", genre: "Alternative Rock", duration: "3:56", description: "Marathon perseverance adventure" },
+    { title: "X Gon' Give It to Ya", artist: "DMX", genre: "Hip-Hop", duration: "3:34", description: "Aggressive adventure energy" }
   ]
 }
