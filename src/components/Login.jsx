@@ -42,6 +42,7 @@ function Login() {
 
         // Notify app and navigate
         window.dispatchEvent(new Event('userLogin'))
+        setLoading(false)
         navigate('/')
         return
       }

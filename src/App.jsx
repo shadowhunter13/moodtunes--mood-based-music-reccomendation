@@ -362,7 +362,14 @@ function App() {
     
     // Listen for storage changes (from other tabs or login/logout)
     window.addEventListener('storage', checkAuth)
-    return () => window.removeEventListener('storage', checkAuth)
+    
+    // Listen for custom userLogin event from Login component
+    window.addEventListener('userLogin', checkAuth)
+    
+    return () => {
+      window.removeEventListener('storage', checkAuth)
+      window.removeEventListener('userLogin', checkAuth)
+    }
   }, [])
 
   const handleLogout = () => {
