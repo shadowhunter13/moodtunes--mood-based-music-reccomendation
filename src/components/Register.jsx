@@ -27,23 +27,51 @@ function Register() {
     setLoading(true)
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
-
-      const data = await response.json()
-
-      if (!response.ok) {
-        throw new Error(data.message || 'Registration failed')
+      // Validation
+      if (!formData.username || !formData.email || !formData.password || !formData.confirmPassword) {
+        throw new Error('All fields are required')
       }
 
-      // Save token to localStorage
-      localStorage.setItem('token', data.token)
-      localStorage.setItem('user', JSON.stringify(data.user))
+      if (formData.password !== formData.confirmPassword) {
+        throw new Error('Passwords do not match')
+      }
+
+      if (formData.password.length < 6) {
+        throw new Error('Password must be at least 6 characters')
+      }
+
+      if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        throw new Error('Invalid email format')
+      }
+
+      // Check if user already exists in localStorage
+      const existingUsers = JSON.parse(localStorage.getItem('moodtunesUsers') || '[]')
+      if (existingUsers.some(u => u.email === formData.email || u.username === formData.username)) {
+        throw new Error('Username or email already exists')
+      }
+
+      // Create new user
+      const newUser = {
+        id: Date.now(),
+        username: formData.username,
+        email: formData.email,
+        password: formData.password // In production, hash this!
+      }
+
+      // Save user to localStorage
+      existingUsers.push(newUser)
+      localStorage.setItem('moodtunesUsers', JSON.stringify(existingUsers))
+
+      // Create token (simple token for local auth)
+      const token = `local_token_${newUser.id}`
+      localStorage.setItem('token', token)
+      localStorage.setItem('user', JSON.stringify({ 
+        username: newUser.username, 
+        email: newUser.email 
+      }))
+
+      // Dispatch custom event to notify App of login
+      window.dispatchEvent(new Event('userLogin'))
 
       // Navigate to home
       navigate('/')

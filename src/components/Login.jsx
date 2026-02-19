@@ -25,23 +25,31 @@ function Login() {
     setLoading(true)
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
-
-      const data = await response.json()
-
-      if (!response.ok) {
-        throw new Error(data.message || 'Login failed')
+      // Validation
+      if (!formData.email || !formData.password) {
+        throw new Error('Email and password are required')
       }
 
-      // Save token to localStorage
-      localStorage.setItem('token', data.token)
-      localStorage.setItem('user', JSON.stringify(data.user))
+      // Get users from localStorage
+      const users = JSON.parse(localStorage.getItem('moodtunesUsers') || '[]')
+      const user = users.find(u => u.email === formData.email)
+
+      if (!user) {
+        throw new Error('Invalid email or password')
+      }
+
+      // Verify password (in production, use bcrypt comparison)
+      if (user.password !== formData.password) {
+        throw new Error('Invalid email or password')
+      }
+
+      // Create token and save to localStorage
+      const token = `local_token_${user.id}`
+      localStorage.setItem('token', token)
+      localStorage.setItem('user', JSON.stringify({ 
+        username: user.username, 
+        email: user.email 
+      }))
 
       // Dispatch custom event to notify App of login
       window.dispatchEvent(new Event('userLogin'))
