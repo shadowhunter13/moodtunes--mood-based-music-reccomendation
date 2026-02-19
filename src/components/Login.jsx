@@ -30,6 +30,22 @@ function Login() {
         throw new Error('Email and password are required')
       }
 
+      // Allow a built-in admin account
+      if (formData.email === 'admin@gmail.com' && formData.password === 'admin123') {
+        const adminUser = { id: 'admin', username: 'admin', email: 'admin@gmail.com' }
+        const token = `local_token_${adminUser.id}`
+        localStorage.setItem('token', token)
+        localStorage.setItem('user', JSON.stringify({
+          username: adminUser.username,
+          email: adminUser.email
+        }))
+
+        // Notify app and navigate
+        window.dispatchEvent(new Event('userLogin'))
+        navigate('/')
+        return
+      }
+
       // Get users from localStorage
       const users = JSON.parse(localStorage.getItem('moodtunesUsers') || '[]')
       const user = users.find(u => u.email === formData.email)
@@ -68,6 +84,10 @@ function Login() {
       <div className="auth-card">
         <h2 className="auth-title">Welcome Back</h2>
         <p className="auth-subtitle">Login to your MoodTunes account</p>
+
+        <p className="demo-note">
+          Demo: use <strong>admin@gmail.com</strong> / <strong>admin123</strong>
+        </p>
 
         {error && <div className="error-message">{error}</div>}
 
